@@ -1,13 +1,12 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UFT-8"
+        
     <title>My Hobby</title>
     </head>
 
     <body>
 <h1>BEING AN ARTIST</h1>
-<h5>By: Rachel Anderson</h6>
+<h5>By: Rachel Anderson</h5>
 <hr/>
 
 <h2>My Inspiration</h2>
