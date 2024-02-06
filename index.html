@@ -1,148 +1,45 @@
-<!--The majority of this code I learned from watching the videos given to us during this course.-->
-<!--As for citing the pictures and tags, I will be attaching a seperate document because it would be silly to have a really long list within this code.-->
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UFT-8">
     <title>Home Away From Home</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600&family=Short+Stack&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600&family=Short+Stack&vsplay=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
 
-
-
-
-    <style>
-        h1{
-            color:#472E17; 
-            font-family: 'Grandstander';
-            font-size: 5vw;
-            text-align: center;
-            text-shadow: 1px 1px 3px brown;
-            text-decoration: underline dotted green;}
-        h2{
-          background-color: rgb(145, 106, 71);
-            color:rgb(44, 25, 3); 
-            font-family: 'Grandstander';
-            box-shadow: 7px 10px 10px 7px rgba(0,0,0,0.1);
-            text-align: center; margin: 300px; margin-top: 25px;
-            margin-bottom: 25px;
-            margin-left: 200px;
-            margin-right: 200px;
-            margin-top: -3px;
-            font-size: 45px;}
-        p{
-            text-indent: 45px;
-            background-color: rgb(212, 169, 129);
-            color:rgb(65, 51, 4); 
-            font-family: 'Short Stack';
-            box-shadow: 7px 10px 10px 7px rgba(0,0,0,0.1);
-            text-align: center; margin: 300px; margin-top: 25px;
-            margin-bottom: 25px;
-            margin-left: 200px;
-            margin-right: 200px;
-            margin-top: 10px;
-            font-size: 20px;
-            line-height: 1.6;}
-       hr {
-            position: relative;
-            top: 20px;
-            border: none;
-            height: 12px;
-            background: #472E17;
-            margin-bottom: 50px;}
-        body {
-            margin: 0;
-            font-family: 'Short Stack';
-            background-color: antiquewhite;}
-        footer{
-            text-align: center}
-
-
-
-
-        .topnav {
-              overflow: hidden;
-              background-color: #35502a;}
-            
-        .topnav a {
-              float: left;
-              color: #f2f2f2;
-              text-align: center;
-              padding: 14px 16px;
-              text-decoration: none;
-              font-size: 20px;}
-            
-        .topnav a:hover {
-              background-color: #6ea175;
-              color: rgb(255, 255, 255);}
-            
-        .topnav a.active {
-              background-color: rgb(66, 161, 66);
-              color: white;}
-        .topnav {
-              margin-inline: 440px;}
-
-
-
-        div.scroll-container {
-              background-color: #8a6038;
-             overflow: auto;
-             white-space: nowrap;
-             padding: 10px;}
-  
-        div.scroll-container img {
-            padding: 10px;}
-
-
-            
-
-
-        #div1{background-color: #472E17; 
-          width:10%; float:right; height: 2399px;}
-        #div2{background-color: #472E17;
-           width:10%; float:left;height: 2399px;}
-      
-    </style>
-<!--styles for site pages, core-->
-
-    <div id="div1"></div>
-    <div id="div2"></div>
-    <div id="div3"></div>
-<!--These div tags are to make the colored sidebars-->
-
-
-
-
-
     <body>
+   
+<div id="wrapper">
+
+      <header>
+        <img src="Images/logo.png" style="width: 20%; height: 15%; margin-left: 39%;">
+
 
         <h1 style="color:#472E17">Home Away From Home</h1>       
-
-            <div class="topnav">
-            <a class="active" href="index.html">Home</a>
-              <a href="reservations.html">Reservations</a>
-              <a href="menu.html">Menu</a>
-              <a href="attractions.html">Attractions</a>
-              <a href="aboutus.html">About Us</a>
-              <a href="resources.html">Resources</a>
-              <a href="contactus.html">Contact Us</a>
-            </div>
-<br/>
-<br/>
-<br/>
-<br/>
-<!--This is the nav bar for all the site's pages-->
-
-  
+              <nav>
+                <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="reservations.html">Reservations</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="attractions.html">Attractions</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            </nav>
+        </header>
     
+<section>
+  <br>
     <h2>Welcome</h2>
       <p><b>Looking for a place to unwind and relax? Want to get away from your everyday troubles? 
         Do you have a desire for outdoor activities but just can’t find the time? Then you’ve just so happen to stumble onto the right website!
@@ -150,55 +47,143 @@
         cooked to perfection for our perfect guests. There is no limit to how much you can eat, so please, eat as much as you'd like! Additionally, our guests get special offers at our nearby
         town, which is full of many activities at a discounted price. With the numerous kinds of rooms, we are sure that you will able to make yourself home...away from home!</b>
       </p>
-    </div>
     <hr/>
 
 
 
+    <div class="gallery">
+        <img src ="cabin.jpg"  style="width: 33%; height:21%;"/>           
+          <img src="Images/skiresort.jpg"  style="width: 33%; height:21%;"/> 
+          <img src="Images/breakfast.jpg"style="width: 33%; height:21%;"/>
+        </div>
+        <!--attempt at making a makeshift gallery-->
 
 
-  <div class="scroll-container">
-    <img src="cabin.jpg" alt="cabin" width="600" height="400">
-    <img src="Images/room.jpg" alt="room"width="600" height="400">
-    <img src="Images/breakfast.jpg" alt="breakfast" width="600" height="400">
-    <img src="Images/lake.jpg" alt="lake" width="600" height="400">
-    <img src="Images/skiresort.jpg" alt="skiresort" width="600" height="400">
-  </div>
-<!--Scroll bar for images-->>
 
+
+        
 <br>
-
 <hr/>
+</section>
 
+
+
+
+
+<section id="mainsection">
 <h2>Activities</h2>
 <p><b>Why should royalty like yourself just sit in your room? Just a stone throw away there are so many activities to participate in: 
   canoeing, skiing, spa's and so much more! However, if you find yourself tuckered out from a day of fun, have no fear! Our lodge has several sitting rooms, each with their own television for all
   of your viewing needs. Additionally, each night we offer special treats to all of those that sit around the campfire just outside of the cabin. If you feel the need to share this experience with your friends,
   you absolutely can! Our lodge offers free WiFi for all guests.</b>
 </p>
+
+<!--GALLERY FROM W3SCHOOLS https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="Images/skicover.jpg" style="width:100%">
+    <div class="text">Ski Resort</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="Images/bonfire.jpg" style="width:100%">
+    <div class="text">Bonfire</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="Images/pond.jpg" style="width:100%">
+    <div class="text">Outside Lake</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+
+
+
+
+  <!--I'm not really following script, but the slideshow doesn't work without it!-->
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  
+
+</section>
 <hr/>
 
-<h2>reviews</h2>
+
+
+
+
+
+
+<aside>
+<h2>Reviews</h2>
 <p><b>We take pride in offering our guests the best of service each and every day that they stay at our Bed and Breakfast! We thank you for sharing your time with us and for leaving such kind reviews.</b>
 </br>
 </p>
-<img src="Images/reviews.png" style="margin-left: 25%;" style="margin-right: 25%;" width="600" height="400" ></img>
-<hr/>
+<br>
+
+<p><b>We rented the entire Bed and Breakfast for a bachelorette weekend before
+   my wedding. The staff was great, the rooms were clean, 
+   and they did all they could to make our time there special<em style="float: right;">~Maria</em></b></p>
+ 
+  <p><b>My husband booked a room for us for our 25th anniversary and it was wonderful. 
+    They provided us with a gift basket in our room to celebrate at no additional charge 
+    and we spent time together exploring the town. I would stay here again in the future.<em style="float: right;">~Karla M.</em></b></p>
+ 
+    <p><b>We wanted to find someplace to stay near a ski resort that was more personal. 
+      We had such a lovely time at Home away from Home. It was close to the ski resort 
+      and we were able to get discounted tickets because we were staying at a local business. 
+      They were very welcoming and our stay was great!<em style="float: right;">~Justine</em></b></p>
+    </aside>
+      <hr/>
 
 
 
 <footer>
     <p>Home Away From Home 2024</p>
-    <img src="Images/logo.png"
-    width="200"
-    height="120"> </img>
 </br>
-    <img src="Images/socials.png"
-    width="100"
-    height="30"> </img>
+<img src="Images/socials.png" style="width: 125px; height: 35px">
+
 </footer>
 <!--footer for bottom of page-->
 
-
+</div>
     </body>
 </html>

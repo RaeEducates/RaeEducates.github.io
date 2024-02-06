@@ -1,0 +1,207 @@
+/*Comments: Thank you so much for your video on my project, it helped me SO MUCH! It was a lot easier to understand because you explained everything little by little*/
+
+/*WRAPPER*/
+#wrapper {
+   width: 80%;
+   margin:auto;}
+
+
+/*REVIEW*/ 
+aside{
+   width: 20%;
+   min-height: 800px;
+   float: right;
+   background-color: darkolivegreen;}
+aside h2{
+   font-family: 'Grandstander';
+   text-align: center;
+   color: #312010;}
+aside p{
+   font-family: 'Short Stack';
+   font-size: 11pt;
+   margin-left: 3%;
+   margin-right: 3%;
+   color: #3f260f;}
+
+   
+/*NAV BAR*/
+nav {
+   height: 37px; 
+   width: 80%;
+   margin-left: 10%;
+   background-color: rgb(39, 71, 31);}
+nav ul {
+   margin:0px;
+   padding:0px;
+   list-style-type: none;}
+nav ul li {
+   display:inline; 
+   padding: 10px;}
+nav ul li a {
+   text-decoration:none;
+   display:block; 
+   padding:10px 20px 10px 20px;
+   float: left;
+   color: whitesmoke;
+   font-family: 'Grandstander' ;}
+nav ul li a:hover {
+   text-decoration:none;
+   display:block; 
+   padding:10px 20px 10px 20px;
+   float: left;
+   color: rgb(235, 174, 105);
+   font-family: 'Grandstander' ;
+   background-color: darkolivegreen;}
+
+
+/*SECTIONS*/   
+#mainsection {
+   width: 80%;
+   min-height: 800px;
+   background-color:rgb(201, 164, 115); }
+#mainsection h2{
+   text-align: center;}
+#mainsection p{
+   margin-left: 3%;
+   margin-right: 3%; }
+section {
+   width: 100%;
+   float: left;
+   background-color: rgb(201, 164, 115);}
+section h2{
+   text-align: center;
+   color: #312010;
+   font-family: 'Grandstander';}
+section p{
+   margin-left: 3%;
+   margin-right: 3%;}
+
+
+/*BASIC*/
+p{
+   color:rgb(65,51,4);
+   font-family: 'Short Stack';}
+hr {
+   position: relative;
+   top: 20px;
+   border: none;
+   height: 12px;
+   background: #472E17;
+   margin-bottom: 50px;}
+body {
+   margin: 0;
+   font-family: 'Grandstander';
+   background-color: rgb(70, 43, 8);}
+header h1{
+   font-size: 5vw;
+   font-family: 'Grandstander';
+   font-size: 80px;
+   text-align: center;
+   text-decoration: underline dotted green;
+   text-shadow: brown;
+   color:#472E17;}
+header{
+   height: auto;
+   margin:0px auto;
+   background-color:rgb(201, 164, 115);}
+
+
+/*MY OWN TAGS*/
+.gallery {
+    justify-content: center;
+    display: flex; }
+.menu {
+   text-align: center;}
+
+
+/*GALLERY FROM W3SCHOOLS: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+/* I took away the numbers because I didn't like the way it looked with them*/
+    * {box-sizing: border-box}
+   body {font-family: 'Short Stack'; margin:0}
+   .mySlides {display: none}
+   img {vertical-align: middle;}
+
+
+/*SLIDESHOW CONTAINER*/
+.slideshow-container {
+   max-width: 1000px;
+   position: relative;
+   margin: auto;}
+ 
+
+ /*NEXT|PREVIOUS BUTTONS*/
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   padding: 16px;
+   margin-top: -22px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;}
+ 
+
+ /*RIGHT NEXT BUTTON*/
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;}
+ 
+
+ /*HOVER*/
+ .prev:hover, .next:hover {
+   background-color: rgba(58, 39, 4, 0.8);}
+ 
+
+ /*CAPTIONS*/
+ .text {
+   color: #e7a76b;
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;}
+ 
+
+ /*BOTTOM DOTS*/
+ .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #6b4c30;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;}
+ 
+
+/*ACTIVE DOT*/ 
+ .active, .dot:hover {
+   background-color: #9c731b;}
+ 
+
+ /*FADE ANIMATIONS*/
+ .fade {
+   animation-name: fade;
+   animation-duration: 1.5s;}
+ 
+
+ @keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}}
+ 
+
+/*FOOTER*/   
+footer{
+   text-align: center;
+   width: 100%;
+   height: 130px;
+   clear: both;
+   background-color: rgb(129, 103, 74);}
+
+footer p{
+   color: lemonchiffon;}
