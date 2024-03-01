@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>A Local from Blackpool</title>
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+<br>
+<br>
+<body>
+  <div id="wrapper">
+
+  <header>
+    <div class="headerWrapper">
+
+
+<br>
+<br>
+    <h1 style="color: #FF6E00">Location</h1>       
+          <nav>
+            <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Location.html">Location</a></li>
+          <li><a href="History.html">History</a></li>
+          <li><a href="Attractions.html">Attractions</a></li>
+          <li><a href="Beaches.html">Beaches</a></li>
+          <li><a href="Art.html">Art</a></li>
+        </ul>
+        </nav>
+        </div>
+        <hr/>
+        <br/>
+    </header>
+
+
+    <section>
+<h2>Area</h2>
+<h3>"It's a beach town, always has been".</h3>
+  <p><b>Located on the west coat shore, we have a cute little beach town called Blackpool. This is a very tourist heavy place with many places to do and see. There's roughly 140,000 people
+    living in Blackpool, not even including all of the tourists! Their economy relies on tourism, as nearly 20 million people visited last year, claimed our interviewee. And rightfully so,
+    there's a lot of attractions which are all upkept extremely well. Additionally, the locals there are very welcoming and are more than happy to assist you if you are in any need of help.
+    With that being said, you will find a variety of landscapes here such as sandy beaches, grassy fields, and lots of clay hills.
+  </b>
+  </p>
+
+</section>
+
+<section id="mainsection">
+<!-- SLIDESHOW FROM W3SCHOOLS-->
+<!--I got rid of some code from it that I didn't want-->
+<div class="slideshow-container">
+
+  <!--images -->
+  <div class="mySlides fade">
+    <img src="Images/location1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/location2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/location3.jpg" style="width:100%">
+  </div>
+
+  <!--buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+  <!--dots-->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+         
+</section>
+
+<section>
+<br>
+<h2>Climate</h2>
+<h3>"You just have to like the rain, it never stops". </h3>
+  <p><b> It was raining every step of the way throughout the visit here in Blackpool, but one can not help but appreciate the gorgeous reflections on the wood floors. It does have
+    it's fair share of bright days, but it still gets very cold. It averages around 30-40F, so make sure to put on a raincoat if you go outside. This does not
+    stop the locals from wearing their favorite shorts or skirts, though!
+  </b>
+  </p>
+  <hr/>
+</section>
+
+
+<footer>
+  <p>Blackpool Informational</p>
+</br>
+</footer>
+
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>A Local from Blackpool</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+
+
+<br>
+<br>
+<body>
+  <div id="wrapper">
+
+  <header>
+    <div class="headerWrapper">
+
+
+<br>
+<br>
+    <h1 style="color: #FF6E00">Beaches</h1>       
+          <nav>
+            <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Location.html">Location</a></li>
+          <li><a href="History.html">History</a></li>
+          <li><a href="Attractions.html">Attractions</a></li>
+          <li><a href="Beaches.html">Beaches</a></li>
+          <li><a href="Art.html">Art</a></li>
+        </ul>
+        </nav>
+        </div>
+     
+    </header>
+
+<section>
+      <hr/>
+      <br/>
+    <h2>A Whole Bunch!</h2>
+    <h3>"So many to 'sea', get it?"</h3>
+      <p><b>After walking the local beach for some time, I had assumed there was one or maybe even two beaches. However, there are a total of 23 beaches here in Blackpool!. Though, according
+        to our interviewee, the most popular beaches by far are Blackpool North, Bispham, and Cleveleys. You may not find people playing in the water during the year, as it is freezing, 
+        however you will commonly see people walking by the shore with their friends or their pets. Additionally, the beaches here vary in the quality of sand. Some beaches have very fine 
+        sand, whereas others will be composed of rock. Regardless, beware of the changing tides as this commonly takes place every other day!
+      </b>
+      </p>
+    </section>  
+
+
+<br>
+</section>
+<section id="mainsection">
+<!-- SLIDESHOW FROM W3SCHOOLS-->
+<!--I got rid of some code from it that I didn't want-->
+<div class="slideshow-container">
+
+  <!--images -->
+  <div class="mySlides fade">
+    <img src="Images/beach1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/beach2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/beach3.jpg" style="width:100%">
+  </div>
+
+  <!--buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+  <!--dots-->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  <hr/>
+  </section>
+ 
+<footer>
+  <p>Blackpool Informational</p>
+</br>
+</footer>
+
+
+    </body>
+</html>
